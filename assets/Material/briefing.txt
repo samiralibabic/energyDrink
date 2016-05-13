@@ -1,0 +1,18 @@
+Energydrink Landingpage
+
+Ihre Aufgabe ist die Erstellung einer Landingpage für die Markteinführung eines neuen Energydrinks in drei Geschmacksrichtungen. Die Zielgruppe des Produkts sind junge, sportliche Leute, die gerne Höchstleistungen abliefern. Die Landingpage soll den User optisch fesseln, ihm die wichtigsten Eigenschaften des Energydrinks vermitteln und ihn dazu bewegen sich über ein Formular eins von tausend gratis Probepaketen zu bestellen.
+
+Sie müssen auf der Landingpage mindestens das Logo (Material/Logo) und alle drei Dosen (Material/Dosen) verwenden. Die Farbe der Dosen und des Logos dürfen nicht verändert werden. Das Logo darf entweder in der schwarzen Variante auf hellem Hintergrund oder in der weißen Variante auf dunklem Hintergrund stehen.
+
+Zusätzlich können Sie noch beliebig viele Stimmungsfotos (Material/Fotos) auswählen und verwenden. Diese dürfen optional beliebig zugeschnitten und bearbeitet werden.
+
+Weiterhin müssen alle Texte (texte.txt) verwendet werden, sowie ein Formular entsprechend der Vorgaben (formular.txt) aufgebaut werden.
+
+Die Landingpage soll responsive sein und auf den gängisten Browsern laufen (Google Chrome, Firefox, Safari). Der Internet Explorer muss nicht berücksichtigt werden.
+
+Als Basis für die Entwicklung der Landingpage verwenden Sie bitte das Framework Bootstrap 3 (http://getbootstrap.com/) und zur Validierung des Formulars den Bootstrap Validator (http://1000hz.github.io/bootstrap-validator/). Die Verwendung von Bootstrap als LESS oder SASS Distribution ist ein zusätzliches Plus. Jede Funktionalität sollte ausschließlich mit JS und jQuery umgesetzt werden.
+
+Als Ergebnis schicken Sie uns bitte ein ZIP Datei mit der Landingpage als statische HTML-Seite "index.html", sowie einen Unterordner "assets", in dem die eingebundenen JS, CSS und Bild Dateien liegen. Wenn Sie zur Erstellung Preprocessors (z.B. LESS / SASS / CoffeeScript) verwendet haben legen Sie die Quelldateien in einem zusätzlichen Unterordner "src" ab.
+
+
+Viel Spaß bei der Umsetzung!

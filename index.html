@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>VegeePower - PUSH YOUR LIMIT!</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/master.css" media="screen" charset="utf-8">
+  <link rel="stylesheet" href="assets/css/media.css" media="screen" charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" media="screen" charset="utf-8">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+  <div class="container-fluid">
+
+    <section id="landing-page">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#landing-page">
+              <img src="assets/img/logo_white.png" alt="" class="logo-white" />
+            </a>
+          </div>
+          <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#production">Herstellung</a></li>
+              <li><a href="#variants">Sorte</a></li>
+              <li><a href="#order">Teste</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+      <!-- text "push your limit but do it yourself" na podlozi i der vegane... -->
+      <div class="landing-text container">
+        <h1 class="text-uppercase">Push your limit</h1>
+        <h2>- but do it soft</h2>
+        <p class="lead text-center">Der vegane Energy Drink in drei fruchtigen Sorten.</p>
+      </div>
+    </section>
+
+    <section id="production">
+      <!-- lista sa karakteristima; kombinacija sa slikom/ikone
+      ovdje ide i text "zur herstellung..."-->
+      <ul class="row">
+        <li class="col-xs-6 col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1">
+          <img src="assets/img/vegan.svg" alt="" class="svg" /><p>100% Vegan</p></li>
+        <li class="col-xs-6 col-sm-2 col-md-2">
+          <img src="assets/img/bio.svg" alt="" class="svg" /><p>100% Bio</p></li>
+        <li class="col-xs-6 col-sm-2 col-md-2">
+          <img src="assets/img/additives.svg" alt="" class="svg" /><p>ohne künstliche Zusätze</p></li>
+        <li class="col-xs-6 col-sm-2 col-md-2">
+          <img src="assets/img/calories.svg" alt="" class="svg" /><p>kalorienarm</p></li>
+        <li class="col-xs-6 col-xs-offset-3 col-sm-2 col-sm-offset-0 col-md-2">
+          <img src="assets/img/sugar.svg" alt="" class="svg" /><p>ohne Zuckerzusätze</p></li>
+      </ul>
+      <div class="row" id="image-row">
+        <p class="col-xs-10 col-xs-offset-1">
+          Zur Herstellung unseres Energy Drinks verwenden wir nur beste Zutaten
+          aus kontrolliert biologischem Anbau. Durch das natürliche Koffein der
+          Guarana-Beeren wirkt er belebend und langfristig ohne dabei auf
+          chemische Wachmacher zurückzugreifen. So ist er die optimale
+          Unterstützung für eine schonende Leistungssteigerung.
+        </p>
+      </div>
+    </section>
+
+    <section id="variants">
+      <!-- doses -->
+      <div class="row">
+        <h2>In drei Geschmacksrichtungen erhältlich</h2>
+      </div>
+      <div class="row" id="dosen">
+        <img src="assets/img/blueberry.png" alt="" id="dose1" class="animated bounceInRight img-responsive" />
+        <img src="assets/img/lemongras.png" alt="" id="dose2" />
+        <img src="assets/img/strawberry.png" alt="" id="dose3" />
+      </div>
+    </section>
+
+    <section id="order">
+      <!-- probepaket tekst sa formularom -->
+      <h2>Gratis Probepaket</h2>
+      <p>
+        Teste den veganen Energy Drink gratis. Bestelle ein Probepaket in
+        einer von drei fruchttigen Sorten und lass dich überzeugen.
+      </p>
+      <form action="#" method="post" class="col-sm-6">
+        <div class="form-group">
+          <label>Geschmacksrichtung:</label>
+          <div class="radio-inline">
+            <label>
+              <input type="radio" name="geschmachkrichtung" id="geschmacksrichtung1"
+              value="blueberry" checked>
+              Blueberry
+            </label>
+          </div>
+          <div class="radio-inline">
+            <label>
+              <input type="radio" name="geschmachkrichtung" id="geschmacksrichtung2"
+              value="lemongras" checked>
+              Lemongras
+            </label>
+          </div>
+          <div class="radio-inline">
+            <label>
+              <input type="radio" name="geschmachkrichtung" id="geschmacksrichtung3"
+              value="strawberry" checked>
+              Strawberry
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="vorname" class="sr-only">Vorname:</label>
+          <input type="text" class="form-control" id="vorname" placeholder="Vorname" />
+        </div>
+        <div class="form-group">
+          <label for="nachname" class="sr-only">Nachname:</label>
+          <input type="text" class="form-control" id="nachname" placeholder="Nachname" />
+        </div>
+        <div class="form-group">
+          <label for="email" class="sr-only">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Email" />
+        </div>
+        <div class="form-group">
+          <label for="strasse" class="sr-only">Straße:</label>
+          <input type="text" class="form-control" id="strasse" placeholder="Straße" />
+        </div>
+        <div class="form-group">
+          <label for="plz" class="sr-only">PLZ:</label>
+          <input type="number" class="form-control" id="plz" placeholder="PLZ" />
+        </div>
+        <div class="form-group">
+          <label for="ort" class="sr-only">Ort:</label>
+          <input type="ort" class="form-control" id="ort" placeholder="Ort" />
+        </div>
+        <div class="form-group">
+          <label for="telefon" class="sr-only">Telefon:</label>
+          <input type="tel" class="form-control" id="telefon" placeholder="Telefon" />
+        </div>
+        <button type="submit" name="button" class="btn btn-default"
+        value="submit">Probepaket bestellen</button>
+
+
+
+      </form>
+    </section>
+
+    <footer>
+      <!-- contact info -->
+    </footer>
+
+  </div><!-- /.container -->
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js" charset="utf-8"></script>
+</body>
+</html>

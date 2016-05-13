@@ -1,0 +1,168 @@
+html, body {
+  font-family: 'Lato', sans-serif;
+  color: #666;
+  font-size: 16px;
+  /* dodati na kraju overflow-x: hidden; */
+  /*overflow-x: hidden;*/
+}
+/* bootstrap modifications */
+.container-fluid {
+  padding: 0;
+}
+.row {
+  text-align: center;
+  padding-left: 0;
+  margin: 0;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.img-responsive {
+  display: inline-block;
+}
+
+/* sections */
+#landing-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  url("../img/energydrink_footage_07.jpg");
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  height: 100vh;
+  padding: 40px 0;
+  color: white;
+  display: block;
+  min-height: 450px;
+}
+
+#navbar {
+  margin-bottom: 20px;
+}
+.navbar {
+  max-height: 74px;
+  height: 74px;
+}
+/* logo */
+.logo-white {
+  height: 50px;
+}
+.navbar-header {
+  margin-bottom: 2%;
+}
+.navbar-default,
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:active {
+  background-color: transparent;
+  border-color: transparent;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.navbar-nav {
+  float:right;
+  margin-top: 0;
+}
+.navbar-brand {
+  padding: 0 15px;
+}
+.nav>li>a:link,
+.nav>li>a:visited {
+  padding: 0;
+  padding-bottom: 2px;
+  margin: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  opacity: .7;
+}
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+  background-color: transparent;
+  opacity: 1;
+  border-bottom: 2px solid #E74C3C;
+  color: #fff;
+}
+.landing-text {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding-bottom: 20px;
+}
+.landing-text h1 {
+  font-size: 4em;
+  font-weight: 300;
+}
+.landing-text h2 {
+  font-size: 3em;
+  font-weight: 300;
+}
+
+.landing-text .lead {
+  opacity: 0.8;
+  margin-top: 2em;
+}
+
+#production {
+  background-color: #ecf0f1;
+
+}
+#image-row {
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  url("../img/energydrink_footage_04.jpg");
+  background-position: bottom;
+  background-attachment: fixed;
+  border-bottom: 1px solid #e7e7e7;
+}
+#production .col-sm-4,
+#production .col-sm-6,
+#production .col-md-2 {
+  padding-left: 0;
+}
+#production li {
+  list-style: none;
+  padding-bottom: 5%;
+  padding-right: 0;
+  padding: 5px;
+}
+#production li p {
+  text-transform: uppercase;
+}
+#production p {
+  display: block;
+}
+#production img {
+  width: 50px;
+  height: 80px;
+}
+
+#variants {
+  color: #E74C3C;
+}
+#variants h2 {
+  font-size: 2em;
+  font-weight: 300;
+}
+#variants h2::after {
+  display: block;
+  height: 2px;
+  background-color: #E74C3C;
+  content: "";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+#dosen {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#dosen img {
+  padding-bottom: 10%;
+}
+
+#order {
+  background-color: #ecf0f1;
+}
+
+#footer {
+  background-color: #A01607;
+}

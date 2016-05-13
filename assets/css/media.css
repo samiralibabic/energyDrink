@@ -1,0 +1,19 @@
+@media only screen and (max-width: 480px) {
+  .landing-text h1,
+  .landing-text h2 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .landing-text h1,
+  .landing-text h2 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+}
