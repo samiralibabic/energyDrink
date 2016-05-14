@@ -49,19 +49,19 @@
     <section id="production">
       <ul class="row">
         <li class="col-xs-6 col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1">
-          <img src="assets/img/vegan.svg" alt="" class="svg" /><p>100% Vegan</p>
+          <img src="assets/img/vegan.svg" alt="" id="svg1" class="svg" /><p>100% Vegan</p>
         </li>
         <li class="col-xs-6 col-sm-2 col-md-2">
-          <img src="assets/img/bio.svg" alt="" class="svg" /><p>100% Bio</p>
+          <img src="assets/img/bio.svg" alt="" id="svg2" class="svg" /><p>100% Bio</p>
         </li>
         <li class="col-xs-6 col-sm-2 col-md-2">
-          <img src="assets/img/additives.svg" alt="" class="svg" /><p>ohne künstliche Zusätze</p>
+          <img src="assets/img/additives.svg" alt="" id="svg3" class="svg" /><p>ohne künstliche Zusätze</p>
         </li>
         <li class="col-xs-6 col-sm-2 col-md-2">
-          <img src="assets/img/calories.svg" alt="" class="svg" /><p>kalorienarm</p>
+          <img src="assets/img/calories.svg" alt="" id="svg4" class="svg" /><p>kalorienarm</p>
         </li>
         <li class="col-xs-6 col-xs-offset-3 col-sm-2 col-sm-offset-0 col-md-2">
-          <img src="assets/img/sugar.svg" alt="" class="svg" /><p>ohne Zuckerzusätze</p>
+          <img src="assets/img/sugar.svg" alt="" id="svg5" class="svg" /><p>ohne Zuckerzusätze</p>
         </li>
       </ul>
       <div class="row" id="image-row">
@@ -80,9 +80,15 @@
         <h2>In drei Geschmacksrichtungen erhältlich</h2>
       </div>
       <div class="row" id="dosen">
-        <img src="assets/img/blueberry.png" alt="" id="dose1" class="img-responsive" />
-        <img src="assets/img/lemongras.png" alt="" id="dose2" class="img-responsive" />
-        <img src="assets/img/strawberry.png" alt="" id="dose3" class="img-responsive" />
+        <div class="col-xs-12 col-sm-4">
+          <img src="assets/img/blueberry.png" alt="" id="dose1" class="img-responsive" />
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <img src="assets/img/lemongras.png" alt="" id="dose2" class="img-responsive" />
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <img src="assets/img/strawberry.png" alt="" id="dose3" class="img-responsive" />
+        </div>
       </div>
     </section>
 
@@ -99,7 +105,7 @@
       <div class="row">
         <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2" id="form-controls">
           <form action="#" method="post">
-            <div class="form-group form-control">
+            <div class="form-group form-control" id="attention-box">
               <label id="main-label">Geschmacksrichtung:</label>
               <div class="radio-inline">
                 <label>
@@ -177,5 +183,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <script src="assets/js/main.js" charset="utf-8"></script>
+  <script src="assets/js/jquery.waypoints.min.js" charset="utf-8"></script>
 </body>
 </html>
