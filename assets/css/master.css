@@ -22,7 +22,7 @@ html, body {
 /* sections */
 #landing-page {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-  url("../img/energydrink_footage_07.jpg");
+  url("../img/energydrink_footage_07-min.jpg");
   background-position: center;
   background-size: cover;
   -webkit-background-size: cover;
@@ -111,7 +111,7 @@ html, body {
 #image-row {
   color: white;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-  url("../img/energydrink_footage_04.jpg");
+  url("../img/energydrink_footage_04-min.jpg");
   background-position: bottom;
   background-attachment: fixed;
   border-bottom: 1px solid #e7e7e7;
@@ -138,13 +138,13 @@ html, body {
   height: 80px;
 }
 .svg {
-  -webkit-animation-duration: 3s;
+  -webkit-animation-duration: 1s;
   -webkit-animation-delay: 0.01s;
-  -moz-animation-duration: 3s;
+  -moz-animation-duration: 1s;
   -moz-aanimation-delay: 0.01s;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-delay: 0.01s;
-  -o-animation-duration: 3s;
+  -o-animation-duration: 1s;
   -o-aanimation-delay: 0.01s;
   visibility: hidden;
 }
@@ -176,7 +176,7 @@ html, body {
 
 #order {
   color: white;
-  background-image: linear-gradient(rgba(231, 76, 60, 0.8), rgba(231, 76, 60, 0.8)), url("../img/energydrink_footage_01.jpg");
+  background-image: linear-gradient(rgba(231, 76, 60, 0.8), rgba(231, 76, 60, 0.8)), url("../img/energydrink_footage_01-min.jpg");
   background-size: cover;
   background-color: #ecf0f1;
 }
