@@ -33,13 +33,12 @@
           <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
               <li><a href="#production">Herstellung</a></li>
-              <li><a href="#variants">Sorte</a></li>
-              <li><a href="#order">Teste</a></li>
+              <li><a href="#variants">die Sorten</a></li>
+              <li><a href="#order">Testen</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
       </nav>
-      <!-- text "push your limit but do it yourself" na podlozi i der vegane... -->
       <div class="landing-text container">
         <h1 class="text-uppercase">Push your limit</h1>
         <h2>- but do it soft</h2>
@@ -48,19 +47,22 @@
     </section>
 
     <section id="production">
-      <!-- lista sa karakteristima; kombinacija sa slikom/ikone
-      ovdje ide i text "zur herstellung..."-->
       <ul class="row">
         <li class="col-xs-6 col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1">
-          <img src="assets/img/vegan.svg" alt="" class="svg" /><p>100% Vegan</p></li>
+          <img src="assets/img/vegan.svg" alt="" class="svg" /><p>100% Vegan</p>
+        </li>
         <li class="col-xs-6 col-sm-2 col-md-2">
-          <img src="assets/img/bio.svg" alt="" class="svg" /><p>100% Bio</p></li>
+          <img src="assets/img/bio.svg" alt="" class="svg" /><p>100% Bio</p>
+        </li>
         <li class="col-xs-6 col-sm-2 col-md-2">
-          <img src="assets/img/additives.svg" alt="" class="svg" /><p>ohne künstliche Zusätze</p></li>
+          <img src="assets/img/additives.svg" alt="" class="svg" /><p>ohne künstliche Zusätze</p>
+        </li>
         <li class="col-xs-6 col-sm-2 col-md-2">
-          <img src="assets/img/calories.svg" alt="" class="svg" /><p>kalorienarm</p></li>
+          <img src="assets/img/calories.svg" alt="" class="svg" /><p>kalorienarm</p>
+        </li>
         <li class="col-xs-6 col-xs-offset-3 col-sm-2 col-sm-offset-0 col-md-2">
-          <img src="assets/img/sugar.svg" alt="" class="svg" /><p>ohne Zuckerzusätze</p></li>
+          <img src="assets/img/sugar.svg" alt="" class="svg" /><p>ohne Zuckerzusätze</p>
+        </li>
       </ul>
       <div class="row" id="image-row">
         <p class="col-xs-10 col-xs-offset-1">
@@ -74,87 +76,99 @@
     </section>
 
     <section id="variants">
-      <!-- doses -->
       <div class="row">
         <h2>In drei Geschmacksrichtungen erhältlich</h2>
       </div>
       <div class="row" id="dosen">
-        <img src="assets/img/blueberry.png" alt="" id="dose1" class="animated bounceInRight img-responsive" />
-        <img src="assets/img/lemongras.png" alt="" id="dose2" />
-        <img src="assets/img/strawberry.png" alt="" id="dose3" />
+        <img src="assets/img/blueberry.png" alt="" id="dose1" class="img-responsive" />
+        <img src="assets/img/lemongras.png" alt="" id="dose2" class="img-responsive" />
+        <img src="assets/img/strawberry.png" alt="" id="dose3" class="img-responsive" />
       </div>
     </section>
 
     <section id="order">
-      <!-- probepaket tekst sa formularom -->
-      <h2>Gratis Probepaket</h2>
-      <p>
-        Teste den veganen Energy Drink gratis. Bestelle ein Probepaket in
-        einer von drei fruchttigen Sorten und lass dich überzeugen.
-      </p>
-      <form action="#" method="post" class="col-sm-6">
-        <div class="form-group">
-          <label>Geschmacksrichtung:</label>
-          <div class="radio-inline">
-            <label>
-              <input type="radio" name="geschmachkrichtung" id="geschmacksrichtung1"
-              value="blueberry" checked>
-              Blueberry
-            </label>
-          </div>
-          <div class="radio-inline">
-            <label>
-              <input type="radio" name="geschmachkrichtung" id="geschmacksrichtung2"
-              value="lemongras" checked>
-              Lemongras
-            </label>
-          </div>
-          <div class="radio-inline">
-            <label>
-              <input type="radio" name="geschmachkrichtung" id="geschmacksrichtung3"
-              value="strawberry" checked>
-              Strawberry
-            </label>
-          </div>
+      <div class="row">
+        <h2>Gratis Probepaket</h2>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2" id="form-intro">
+          <p>
+            Teste den veganen Energy Drink gratis. Bestelle ein Probepaket in
+            einer von drei fruchttigen Sorten und lass dich überzeugen.
+          </p>
         </div>
-        <div class="form-group">
-          <label for="vorname" class="sr-only">Vorname:</label>
-          <input type="text" class="form-control" id="vorname" placeholder="Vorname" />
+      </div>
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2" id="form-controls">
+          <form action="#" method="post">
+            <div class="form-group form-control">
+              <label id="main-label">Geschmacksrichtung:</label>
+              <div class="radio-inline">
+                <label>
+                  <input type="radio" name="geschmachkrichtung" id="geschmacksrichtung1" value="blueberry" checked>
+                  <img src="assets/img/blueberry.png" />
+                  <p>Blueberry</p>
+                </label>
+              </div>
+              <div class="radio-inline">
+                <label>
+                  <input type="radio" name="geschmachkrichtung" id="geschmacksrichtung2" value="lemongras" checked>
+                  <img src="assets/img/lemongras.png"  />
+                  <p>Lemongras</p>
+                </label>
+              </div>
+              <div class="radio-inline">
+                <label>
+                  <input type="radio" name="geschmachkrichtung" id="geschmacksrichtung3" value="strawberry" checked>
+                  <img src="assets/img/strawberry.png"  />
+                  <p>Strawberry</p>
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="vorname" class="sr-only">Vorname:</label>
+              <input type="text" class="form-control" id="vorname" placeholder="Vorname" />
+            </div>
+            <div class="form-group">
+              <label for="nachname" class="sr-only">Nachname:</label>
+              <input type="text" class="form-control" id="nachname" placeholder="Nachname" />
+            </div>
+            <div class="form-group">
+              <label for="email" class="sr-only">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Email" />
+            </div>
+            <div class="form-group">
+              <label for="strasse" class="sr-only">Straße:</label>
+              <input type="text" class="form-control" id="strasse" placeholder="Straße" />
+            </div>
+            <div class="form-group">
+              <label for="plz" class="sr-only">PLZ:</label>
+              <input type="number" class="form-control" id="plz" placeholder="PLZ" />
+            </div>
+            <div class="form-group">
+              <label for="ort" class="sr-only">Ort:</label>
+              <input type="ort" class="form-control" id="ort" placeholder="Ort" />
+            </div>
+            <div class="form-group">
+              <label for="telefon" class="sr-only">Telefon:</label>
+              <input type="tel" class="form-control" id="telefon" placeholder="Telefon" />
+            </div>
+            <button type="submit" name="button" class="btn btn-default" value="submit">Probepaket bestellen</button>
+          </form>
         </div>
-        <div class="form-group">
-          <label for="nachname" class="sr-only">Nachname:</label>
-          <input type="text" class="form-control" id="nachname" placeholder="Nachname" />
-        </div>
-        <div class="form-group">
-          <label for="email" class="sr-only">Email:</label>
-          <input type="email" class="form-control" id="email" placeholder="Email" />
-        </div>
-        <div class="form-group">
-          <label for="strasse" class="sr-only">Straße:</label>
-          <input type="text" class="form-control" id="strasse" placeholder="Straße" />
-        </div>
-        <div class="form-group">
-          <label for="plz" class="sr-only">PLZ:</label>
-          <input type="number" class="form-control" id="plz" placeholder="PLZ" />
-        </div>
-        <div class="form-group">
-          <label for="ort" class="sr-only">Ort:</label>
-          <input type="ort" class="form-control" id="ort" placeholder="Ort" />
-        </div>
-        <div class="form-group">
-          <label for="telefon" class="sr-only">Telefon:</label>
-          <input type="tel" class="form-control" id="telefon" placeholder="Telefon" />
-        </div>
-        <button type="submit" name="button" class="btn btn-default"
-        value="submit">Probepaket bestellen</button>
-
-
-
-      </form>
+      </div>
+      </div>
     </section>
 
     <footer>
-      <!-- contact info -->
+      <div class="row">
+        <address class="">
+          VegeePower GmbH <br>
+          Bahnhofplatz 10 <br>
+          CH-9100 Herisau <br>
+          <br>
+          Tel. 41 71 383 90 50 <br>
+          <a href="mailto:info@vegepowergmbh.ch">info@vegeepowergmbh.ch</a><br>
+        </address>
+      </div>
     </footer>
 
   </div><!-- /.container -->

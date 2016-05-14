@@ -2,8 +2,7 @@ html, body {
   font-family: 'Lato', sans-serif;
   color: #666;
   font-size: 16px;
-  /* dodati na kraju overflow-x: hidden; */
-  /*overflow-x: hidden;*/
+  overflow-x: hidden;
 }
 /* bootstrap modifications */
 .container-fluid {
@@ -90,6 +89,7 @@ html, body {
 .landing-text h1 {
   font-size: 4em;
   font-weight: 300;
+  color: #E74C3C;
 }
 .landing-text h2 {
   font-size: 3em;
@@ -103,7 +103,6 @@ html, body {
 
 #production {
   background-color: #ecf0f1;
-
 }
 #image-row {
   color: white;
@@ -134,6 +133,10 @@ html, body {
   width: 50px;
   height: 80px;
 }
+.svg {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 0.5s;
+}
 
 #variants {
   color: #E74C3C;
@@ -160,9 +163,76 @@ html, body {
 }
 
 #order {
+  color: white;
+  background-image: linear-gradient(rgba(231, 76, 60, 0.8), rgba(231, 76, 60, 0.8)), url("../img/energydrink_footage_01.jpg");
+  background-size: cover;
   background-color: #ecf0f1;
 }
+#order #form-intro {
+  height: 100%;
+}
+#order #form-controls {
 
-#footer {
-  background-color: #A01607;
+}
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.form-control {
+  height: auto;
+}
+.radio-inline {
+  padding-left: 0;
+}
+label {
+  display: block;
+  font-weight: 400;
+  color: #666;
+}
+#main-label {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  color: #E74C3C;
+  text-transform: uppercase;
+}
+#form-controls label > input {
+  visibility: hidden;
+}
+#form-controls label > input + img {
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  height: 150px;
+}
+#form-controls label > p {
+  margin: 20px auto;
+}
+#order > div:nth-child(2) {
+  padding-top: 0;
+}
+#form-controls label > input:checked + img {
+  border: 2px solid #E73C3C;
+}
+
+footer {
+  background-color: #383838;
+  color: white;
+  opacity: 0.8;
+}
+footer a:link,
+footer a:visited {
+  padding: 0;
+  padding-bottom: 2px;
+  margin: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  opacity: .7;
+}
+footer a:focus,
+footer a:hover {
+  text-decoration: none;
+  background-color: transparent;
+  opacity: 1;
+  border-bottom: 2px solid #E74C3C;
+  color: #fff;
 }
