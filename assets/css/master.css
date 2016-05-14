@@ -216,7 +216,8 @@ label {
   border-radius: 4px;
   height: 150px;
 }
-#form-controls label > p {
+.product {
+  display: block;
   margin: 20px auto;
 }
 #order > div:nth-child(2) {
