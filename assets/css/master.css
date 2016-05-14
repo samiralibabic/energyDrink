@@ -225,6 +225,23 @@ label {
 #form-controls label > input:checked + img {
   border: 2px solid #E73C3C;
 }
+.help-block li {
+  color: white;
+}
+#submit-btn {
+  text-transform: uppercase;
+  color: white;
+  background: none;
+  border: 2px solid white;
+}
+#thank-you {
+  display: none;
+  text-transform: uppercase;
+}
+#in-stock {
+  color: #E74C3C;
+  padding-bottom: 5%;
+}
 
 footer {
   background-color: #383838;

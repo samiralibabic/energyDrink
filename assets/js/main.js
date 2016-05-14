@@ -85,4 +85,30 @@ $(document).ready(function() {
         $('#attention-box').addClass('animated pulse');
     }, {offset: '50%'});
 
+    // get number in-stock for form
+    var x = $.get('http://energydrink.stage.mediadivision.ch/api/count.php?key=2178491928', function(data) {
+        if (data <= 0) {
+            $('form').addClass('animated fadeOut').one(end, function () {
+                $('form').css('display', 'none');
+                $('#thank-you').text('Leider sind alle Probepakete vergriffen.');
+                $('#thank-you').css('display', 'block');
+            });
+        } else {
+            $('#in-stock').text('Noch ' + (1000 - data) + ' von 1000 Probepaketen verfügbar!');
+        };
+    });
+
+    // form submit
+    $('form').validator().on('submit', function(event){
+        if (event.isDefaultPrevented()) {
+        } else {
+            $('form').addClass('animated fadeOut').one(end, function () {
+                $('form').css('display', 'none');
+                $('#thank-you').css('display', 'block');
+            });
+            event.preventDefault();
+            $.post("http://energydrink.stage.mediadivision.ch/api/post.php?key=2178491928", $('form').serialize());
+        };
+    });
+
 });
