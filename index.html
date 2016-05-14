@@ -104,9 +104,10 @@
       </div>
       <div class="row">
         <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2" id="form-controls">
-          <form action="#" method="post">
+          <form action="" method="post" data-toggle="validator" role="form">
             <div class="form-group form-control" id="attention-box">
               <label id="main-label">Geschmacksrichtung:</label>
+              <label id="in-stock"></label>
               <div class="radio-inline">
                 <label>
                   <input type="radio" name="geschmachkrichtung" id="geschmacksrichtung1" value="blueberry" checked>
@@ -116,51 +117,65 @@
               </div>
               <div class="radio-inline">
                 <label>
-                  <input type="radio" name="geschmachkrichtung" id="geschmacksrichtung2" value="lemongras" checked>
+                  <input type="radio" name="geschmachkrichtung" id="geschmacksrichtung2" value="lemongras">
                   <img src="assets/img/lemongras.png"  />
                   <p>Lemongras</p>
                 </label>
               </div>
               <div class="radio-inline">
                 <label>
-                  <input type="radio" name="geschmachkrichtung" id="geschmacksrichtung3" value="strawberry" checked>
+                  <input type="radio" name="geschmachkrichtung" id="geschmacksrichtung3" value="strawberry">
                   <img src="assets/img/strawberry.png"  />
                   <p>Strawberry</p>
                 </label>
               </div>
             </div>
-            <div class="form-group">
+            <div class="form-group has-feedback">
               <label for="vorname" class="sr-only">Vorname:</label>
-              <input type="text" class="form-control" id="vorname" placeholder="Vorname" />
+              <input type="text" class="form-control" id="vorname" placeholder="Vorname" required data-error="Dieses Feld darf nicht leer sein" />
+              <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+              <div class="help-block with-errors"></div>
             </div>
-            <div class="form-group">
+            <div class="form-group has-feedback">
               <label for="nachname" class="sr-only">Nachname:</label>
-              <input type="text" class="form-control" id="nachname" placeholder="Nachname" />
+              <input type="text" class="form-control" id="nachname" placeholder="Nachname" required data-error="Dieses Feld darf nicht leer sein" />
+              <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+              <div class="help-block with-errors"></div>
             </div>
-            <div class="form-group">
+            <div class="form-group has-feedback">
               <label for="email" class="sr-only">Email:</label>
-              <input type="email" class="form-control" id="email" placeholder="Email" />
+              <input type="email" class="form-control" id="email" placeholder="Email" required data-error="Falsche E-mail Adresse" />
+              <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+              <div class="help-block with-errors"></div>
             </div>
-            <div class="form-group">
+            <div class="form-group has-feedback">
               <label for="strasse" class="sr-only">Straße:</label>
-              <input type="text" class="form-control" id="strasse" placeholder="Straße" />
+              <input type="text" class="form-control" id="strasse" placeholder="Straße/Nr." required data-error="Dieses Feld darf nicht leer sein" />
+              <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+              <div class="help-block with-errors"></div>
             </div>
-            <div class="form-group">
+            <div class="form-group has-feedback">
               <label for="plz" class="sr-only">PLZ:</label>
-              <input type="number" class="form-control" id="plz" placeholder="PLZ" />
+              <input type="number" class="form-control" id="plz" placeholder="PLZ" required data-error="Dieses Feld darf nicht leer sein" />
+              <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+              <div class="help-block with-errors"></div>
             </div>
-            <div class="form-group">
+            <div class="form-group has-feedback">
               <label for="ort" class="sr-only">Ort:</label>
-              <input type="ort" class="form-control" id="ort" placeholder="Ort" />
+              <input type="text" class="form-control" id="ort" placeholder="Ort" required data-error="Dieses Feld darf nicht leer sein" />
+              <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+              <div class="help-block with-errors"></div>
             </div>
             <div class="form-group">
               <label for="telefon" class="sr-only">Telefon:</label>
               <input type="tel" class="form-control" id="telefon" placeholder="Telefon" />
             </div>
-            <button type="submit" name="button" class="btn btn-default" value="submit">Probepaket bestellen</button>
+            <button type="submit" name="button" class="btn btn-default" value="submit" id="submit-btn">Probepaket bestellen</button>
           </form>
         </div>
-      </div>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2" id="thank-you">
+          <span class="success">Vielen Dank für Ihre Bestellung!</span>
+        </div>
       </div>
     </section>
 
@@ -184,5 +199,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <script src="assets/js/main.js" charset="utf-8"></script>
   <script src="assets/js/jquery.waypoints.min.js" charset="utf-8"></script>
+  <script src="assets/js/validator.min.js" charset="utf-8"></script>
 </body>
 </html>
