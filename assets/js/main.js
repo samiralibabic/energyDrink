@@ -87,7 +87,7 @@ $(document).ready(function() {
 
     // get number in-stock for form
     var x = $.get('http://energydrink.stage.mediadivision.ch/api/count.php?key=2178491928', function(data) {
-        if (data <= 0) {
+        if (1000 - data <= 0) {
             $('form').addClass('animated fadeOut').one(end, function () {
                 $('form').css('display', 'none');
                 $('#thank-you').text('Leider sind alle Probepakete vergriffen.');
