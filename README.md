@@ -1,5 +1,7 @@
 # README.md
 
+![Screenshot](screenshot.png)
+
 ## Project Name
 
   Energy drink from VegeePower GmbH
